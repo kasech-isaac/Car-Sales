@@ -18,7 +18,7 @@ const intialState={
 
 const carReducer= (state=intialState, action) => {
   switch(action.type){
-    case "BUY_ITEMS":
+    case "ADD_FEATURE":
       return {...state,
        car:{price:state.car.price+action.payload.price, features:[...state.car.features,action.payload]}}
   

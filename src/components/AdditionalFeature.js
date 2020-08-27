@@ -1,5 +1,9 @@
 import React from 'react';
 import {connect} from "react-redux";
+import {addFeature} from "../action/car"
+
+
+
 const AdditionalFeature = props => {
   return (
     <li>
@@ -12,4 +16,4 @@ const AdditionalFeature = props => {
   );
 };
 
-export default AdditionalFeature;
+export default connect(null,{addFeature}) (AdditionalFeature);

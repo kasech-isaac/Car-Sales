@@ -43,4 +43,4 @@ const mapStateToProps=state=>{
     additionalFeatures:state.additionalFeatures
   };
 };
-connect(mapStateToProps,{}) (App);
+export default connect(mapStateToProps,{}) (App);
